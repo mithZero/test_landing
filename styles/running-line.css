@@ -16,13 +16,13 @@
 	padding-block: 18px;
 	min-width: 100%;
 	white-space: nowrap;
-	animation-name: runningLine;
+	animation-name: running-line;
 	animation-duration: 20s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
 
-@keyframes runninLine {
+@keyframes running-line {
 	from {
 		transform: translateX(0);
 	}
