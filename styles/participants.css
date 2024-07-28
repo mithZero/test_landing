@@ -1,0 +1,123 @@
+.participants {
+}
+
+.participants__headline {
+	max-width: var(--container-size);
+	padding: var(--container-padding);
+	margin-inline: auto;
+	font-family: Merriweather, sans-serif;
+	text-transform: uppercase;
+	font-size: 54px;
+	line-height: 1.2;
+	color: #313131;
+	font-weight: 400;
+	margin-block-start: 151px;
+}
+
+.participants__slider {
+	max-width: var(--container-size);
+	padding-inline: var(--container-padding);
+	margin-inline: auto;
+	padding-inline-end: 0;
+	overflow: hidden;
+}
+
+.participants__list {
+	margin-block-start: 0;
+	list-style-type: none;
+	padding-inline-start: 0;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(6, 394px);
+}
+
+.participants__participant {
+}
+
+.participant {
+	color: #313131;
+	line-height: 1.2;
+	text-align: center;
+	/* margin-block-start: 28px; */
+}
+
+.participant__photo {
+}
+
+.participant__name {
+	display: block;
+	margin-block-start: 25px;
+	font-family: Golos Text, sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.participant__achievement {
+	margin-block-start: 5px;
+	display: block;
+	font-family: Golos Text, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.participant__cta {
+	text-decoration: none;
+	display: inline-block;
+	margin-block-start: 20px;
+	margin-block-end: 124px;
+	font-family: Golos Text, serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1;
+	padding: 8px 11px 9px 11px;
+	border: 1px solid #3057a2;
+	border-radius: 62px;
+}
+
+.participant__cta:hover {
+	background-color: #3057a2;
+	color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+	.participants {
+	}
+
+	.participants__headline {
+		margin-block-start: 125px;
+		margin-block-end: 20px;
+		font-size: 36px;
+		line-height: 1.1;
+	}
+
+	.participants__slider {
+		margin-block-end: 36px;
+	}
+
+	.participants__list {
+		grid-template-columns: repeat(6, 335px);
+	}
+
+	.participants__participant {
+	}
+
+	.participant {
+	}
+
+	.participant__photo {
+		width: 244px;
+	}
+
+	.participant__name {
+	}
+
+	.participant__achievement {
+		margin-block-start: 7px;
+	}
+
+	.participant__cta {
+	}
+
+	.participant__cta:hover {
+	}
+}

@@ -1,0 +1,23 @@
+:root {
+	--container-size: min(100vw, calc(1222px + 30px));
+	--container-padding: 15px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.page__body {
+	height: 100svh;
+	margin: 0;
+}
+
+@media screen and (max-width: 375px) {
+	:root {
+		--container-padding: 20px;
+	}
+}

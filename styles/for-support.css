@@ -1,0 +1,290 @@
+.for-support {
+	max-width: var(--container-size);
+	padding-inline: var(--container-padding);
+	margin-inline: auto;
+	margin-block-start: 108px;
+}
+
+.for-support__caption {
+	max-width: var(--container-size);
+	margin: 0;
+}
+
+.caption {
+	text-transform: uppercase;
+	font-family: Merriweather, sans-serif;
+	font-size: 36px;
+	line-height: 1.36;
+	color: #313131;
+}
+
+.caption--breaked {
+}
+
+.caption--first {
+	padding-inline-end: 430px;
+	position: relative;
+	min-height: 250px;
+}
+
+.caption--breaked::after {
+	position: absolute;
+	display: block;
+	content: "";
+	background-image: url(../images/for-support-img-first.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: min(394px, 95vw);
+	height: 250px;
+	top: -28px;
+	right: 0;
+	z-index: -1;
+}
+
+.caption--red {
+	color: #f54932;
+	font-weight: bold;
+}
+
+.caption--second {
+	margin-block-start: 37px;
+	position: relative;
+	padding-inline-start: max(calc(100% - 704px), 40%);
+}
+
+.caption--second::before {
+	position: absolute;
+	content: "";
+	background-image: url(../images/for-support-img-second.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: min(528px, 45%);
+	height: 609px;
+	top: -29px;
+	left: -26px;
+	z-index: -1;
+}
+
+.for-support__table {
+	max-width: min(704px, calc(100% - 40%));
+	margin-inline-start: auto;
+	margin-block-start: 44px;
+	font-family: Golos Text, sans-serif;
+}
+
+.table {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2px;
+	font-size: 20px;
+	background-color: #d0d0d0;
+}
+
+.table__item {
+	display: flex;
+	align-items: baseline;
+	line-height: 1.2;
+	gap: 2px;
+}
+
+.table__key {
+	flex-basis: min(305px, 25vw);
+	color: #313131;
+	padding: 15px;
+	background-color: #fff;
+	padding-inline-start: 0;
+}
+
+.table__value {
+	flex: auto;
+	background-color: #fff;
+	padding: 15px 15px 14px 15px;
+	font-weight: 600;
+	margin-inline-start: 0;
+}
+
+.table__value--old-price {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: line-through;
+	margin-block-start: -5px;
+	margin-inline-end: 7px;
+	text-decoration-color: #f54932;
+}
+
+.for-support__cta {
+	max-width: 704px;
+	display: block;
+	margin-inline-start: auto;
+	margin-block-start: 33px;
+	font-family: Golos Text, sans-serif;
+	color: #3057a2;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 870px) {
+	.for-support {
+	}
+
+	.for-support__caption {
+	}
+
+	.caption {
+	}
+
+	.caption--first {
+		padding-inline-end: 0;
+		position: relative;
+		min-height: 250px;
+	}
+
+	.caption--breaked {
+		display: block;
+		padding-block-start: 300px;
+		position: relative;
+	}
+
+	.caption--breaked::after {
+		top: 24px;
+		right: 50%;
+		transform: translate(50%);
+		z-index: -1;
+	}
+
+	.caption--second {
+		padding-block-start: min(600px, calc(100vw + 47px));
+		padding-inline-start: 0;
+	}
+
+	.caption--second::before {
+		width: min(528px, 100vw);
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	.for-support__table {
+		max-width: 100%;
+	}
+
+	.table {
+	}
+
+	.table__item {
+		flex-wrap: wrap;
+		/* margin-block-start: 2px; */
+		gap: 0;
+		padding: 16px 15px 6px 0;
+		background-color: #fff;
+	}
+
+	.table__item:first-child {
+		/* margin-block-start: 0; */
+	}
+
+	.table__key {
+		flex-basis: auto;
+		flex-grow: 0;
+		display: inline-block;
+	}
+
+	.table__value {
+		flex-grow: 0;
+		padding-inline-start: 0;
+		display: inline-block;
+	}
+
+	.table__value--old-price {
+	}
+
+	.for-support__cta {
+	}
+
+	.table {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.for-support {
+		margin-block-start: 48px;
+	}
+
+	.for-support__caption {
+		font-size: 28px;
+	}
+
+	.caption {
+	}
+
+	.caption--first {
+		padding-inline-end: 0;
+		position: relative;
+		min-height: 250px;
+	}
+
+	.caption--breaked {
+		display: block;
+		padding-block-start: 261px;
+		position: relative;
+	}
+
+	.caption--breaked::after {
+		width: 335px;
+		height: 212px;
+		background-size: cover;
+	}
+
+	.caption--second {
+	}
+
+	.caption--second::before {
+		top: -4px;
+	}
+
+	.for-support__table {
+		margin-block-start: 29px;
+	}
+
+	.table {
+	}
+
+	.table__item {
+		flex-wrap: wrap;
+		margin-block-start: 0;
+		gap: 0;
+		background-color: #fff;
+		padding: 0;
+	}
+
+	.table__item:first-child {
+		margin-block-start: 0;
+	}
+
+	.table__key {
+		flex-basis: auto;
+		flex-grow: 0;
+		display: inline-block;
+		padding: 15px 12px 6px 0;
+	}
+
+	.table__value {
+		flex-grow: 0;
+		padding-inline-start: 0;
+		display: inline-block;
+		padding: 6px 0 15px 0;
+	}
+
+	.table__value--old-price {
+	}
+
+	.for-support__cta {
+		font-size: 18px;
+		margin-block-start: 25px;
+	}
+
+	.table {
+		grid-template-columns: 1fr;
+	}
+}

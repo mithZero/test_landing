@@ -1,0 +1,15 @@
+.footer {
+	background-color: #e9ded4;
+}
+
+.footer__colophon {
+	margin: 0 auto;
+	max-width: var(--container-size);
+	padding: var(--container-padding);
+	padding-block: 41px 72px;
+	font-family: Golos Text, serif;
+	font-size: 16px;
+	color: #313131;
+	font-weight: 400;
+	line-height: 1.2;
+}

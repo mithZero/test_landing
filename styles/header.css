@@ -1,0 +1,29 @@
+.header {
+	max-width: var(--container-size);
+	margin: 0 auto -88px auto;
+	padding: var(--container-padding);
+	height: 88px;
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	height: 36px;
+}
+
+.header__logo--img {
+	max-width: 100%;
+	height: inherit;
+}
+
+@media screen and (max-width: 375px) {
+	.header__logo {
+		height: 31px;
+	}
+
+	.header {
+		max-width: var(--container-size);
+		margin: 0 auto -68px auto;
+		height: 67px;
+	}
+}
